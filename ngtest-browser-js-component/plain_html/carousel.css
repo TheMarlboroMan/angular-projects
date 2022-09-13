@@ -1,0 +1,13 @@
+div.djs-simple-carousel-container div.djs-simple-carousel-limbo {opacity: 0.0; position: relative; width: 10px; height: 10px; overflow: hidden; z-index: 999;}
+div.djs-simple-carousel-container div.djs-simple-carousel-limbo > div {position: absolute; top: 0px; left: 0px;}
+div.djs-simple-carousel-container img.djs-simple-carousel-loader {position: relative; top: 50%; left: 50%; width: 100px; height: 100px; margin-top: 50px; margin-left: -50px;}
+div.djs-simple-carousel-container {}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame {/*width:200px; height: 200px; */ position: relative; overflow: hidden; border: 1px solid black;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item {width:100%; height: 100%; position: absolute; overflow: hidden;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item img {position: absolute; z-index: 0; /*width: 200px; height: 200px;*/}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item span {position: absolute; z-index: 1; top:20px; right: 20px; background: rgba(200,200,200,0.5); padding: 10px; font-weight: bold; transition: all 0.5s ease;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item.djs-simple-carousel-idle span {top:-100%;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item.djs-simple-carousel-active {left:  0px;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item.djs-simple-carousel-wayout {left:  -100%;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item.djs-simple-carousel-idle {left:  100%;}
+div.djs-simple-carousel-container div.djs-simple-carousel-frame div.djs-simple-carousel-item.djs-simple-carousel-in-transit {transition: all 0.3s ease;}

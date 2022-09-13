@@ -1,0 +1,2 @@
+nav a {text-decoration: none; padding: 2px 10px; background: #000; color: #fff;}
+nav a.nav_active {background: #ccc; color: #000;}

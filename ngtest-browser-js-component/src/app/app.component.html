@@ -1,0 +1,10 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<input type="button" value="enable" (click)="enable()" />
+<input type="button" value="disable" (click)="disable()" />
+<ng-container *ngIf="view_carousel">
+	<carousel></carousel>
+</ng-container>

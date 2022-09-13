@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel test</title>
+	<script src="carousel.js"></script>
+	<link href='carousel.css' rel='stylesheet' type='text/css'>
+	</head>
+<body>
+<div id="container"></div>
+<input type="button" value="Start" onclick="start()"; />
+<input type="button" value="Stop" onclick="stop()" />
+</body>
+<script>
+let carousel=new djs_simple_carousel();
+let data={
+	delay:2000, largepics: true, width: 200, height: 200,
+	pics:[
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_1.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_2.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_3.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_4.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_5.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_6.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_7.jpg', txt: 'Caption'},
+		{src:'http://www.caballorenoir.net/undev/media/entradas/entrada_8.jpg', txt: 'Caption'}]
+}
+
+carousel.init(document.getElementById('container'), data);
+function start() {if(!carousel.is_started()) carousel.start();}
+function stop() {if(carousel.is_started()) carousel.stop();}
+</script>
+</html>

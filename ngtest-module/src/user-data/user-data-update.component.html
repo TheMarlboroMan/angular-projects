@@ -1,0 +1,18 @@
+<h2>Change the user data here</h2>
+<form #userdataform="ngForm" (ngSubmit)="send_data()">
+	<div>
+		<label>Name:
+			<input type="text" name="name" id="name" #namefield="ngModel" required [(ngModel)]="get_model().name" />
+		</label>
+		<p *ngIf="!namefield.valid">This field is required!</p>
+	</div>
+	<div>
+		<label>Email:
+			<input type="text" name="email" id="email" #emailfield="ngModel" email required [(ngModel)]="get_model().email" />
+		</label>
+		<p *ngIf="!emailfield.valid">This field is required to be a valid email address!</p>
+	</div>
+	<div>
+		<input type="submit" value="Change user data" [disabled]="!userdataform.valid"/>
+	</div>
+</form>
