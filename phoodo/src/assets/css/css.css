@@ -1,0 +1,25 @@
+body {font-family: "Roboto", sans-serif; background-color: #fcf9ea; color: #333333;}
+
+/** Color and background ... */
+.color-fg-main {color: #364408;}
+.color-bg-main {background: url("../img/bg/bg-pattern-main.svg") #c8ea59;}
+.color-bg-secondary {background: #CCBF80;}
+.color-bg-clear {background: #ddd; }
+.bg-pattern {background-color: #fcf9ea; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d3ca9a' fill-opacity='0.17'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.border-bottom-main {border-bottom: 0.3em solid #c8ea59;}
+.border-top-main {border-top: 0.3em solid #c8ea59;}
+
+/* Button links and inputs... */
+a.btn {text-decoration: none; border: none; color: #fff;}
+.btn:hover {transition: 0.2s all ease;}
+.btn-main {background: #364408; color: #fff; font-weight: bold; padding: 0.3em 2em;}
+.btn-main:hover {background: #5E6939;}
+.btn-blue {background: #4683ea; color: #fff; font-weight: bold; padding: 0.3em 2em;}
+.btn-blue:hover {background: #3868bb;}
+
+/* TODO: This goes somewhere else ... */
+input[type="text"], input[type="password"] {border: 1px solid rgb(209, 213, 218); display: block; width: 100%; padding-top: 0.2em; padding-bottom: 0.2em; color: #24292e; background: #fff;}
+input[type="submit"] {border: none; margin-top: 0.4em;}
+
+/* Main */
+#main-content {min-height: 50vh;}

@@ -1,0 +1,15 @@
+	<div class="music-header music-textured-bg">
+
+		<header>
+			<h1>Object-oriented tunes</h1>
+			<h2>Songs in the key of C++</h2>
+		</header>
+
+		<nav>
+			<!-- Remember to import the Routermodule both in the ts file and the imports key of the module! -->
+			<a routerLink="newest">Newest</a>
+			<a *ngIf="is_next()" [routerLink]="['song', get_next()]">Next</a>
+			<a *ngIf="is_previous()" [routerLink]="['song', get_previous()]">Previous</a>
+			<a routerLink="all">All</a>
+		</nav>
+	</div>

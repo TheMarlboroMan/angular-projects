@@ -1,0 +1,4 @@
+div#footer-info {font-size: 0.95em; padding: 3em 0em; margin-top: 3em;}
+div#footer-info ul {padding: 0px;}
+div#footer-info ul li {list-style: none;}
+div#footer-info .copyright {text-align: center; margin-top: 2em; font-weight: bold;}

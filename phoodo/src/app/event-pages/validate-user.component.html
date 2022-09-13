@@ -1,0 +1,16 @@
+<div *ngIf="is_verifying()" class="verifying">
+	<h2>Por favor, espera...</h2>
+	<p>Estamos verificando tus datos, sólo tardaremos unos segundos.</p>
+</div>
+
+<div *ngIf="is_ok()" class="ok">
+	<h2>¡Bienvenido a Phoodo!</h2>
+	<p>Tu cuenta ha sido verificada con éxito. Ahora puedes cerrar esta pestaña
+	y hacer login en la aplicación.</p>
+</div>
+
+<div *ngIf="is_error()" class="error">
+	<h2>Lo sentimos...</h2>
+	<p>Ha ocurrido un error al verificar tus datos.</p>
+	<p>Por favor, revisa el enlace de validación de cuenta o inténtalo más tarde.</p>
+</div>

@@ -1,0 +1,48 @@
+<h2>Registro</h2>
+
+<div class="row">
+
+	<div class="col-md-6">
+
+		<div *ngIf="get_message().length">{{message}}</div>
+
+		<form *ngIf="is_show_form()" #dataform="ngForm" (ngSubmit)="submit_form()" [hidden]="sending" >
+			<div>
+				<label>
+					Email: 
+					<input #userfield="ngModel" type="text" name="email" id="email" [email]="true" [(ngModel)]="data_model.email" required />
+				</label>
+				<p *ngIf="userfield.touched && !userfield.valid">Este campo debe ser un email válido.</p>
+			</div>
+			<div>
+				<label>
+					Contraseña:
+					<input #passfield="ngModel" type="password" name="pass" id="pass" [(ngModel)]="data_model.pass" required minlength="4" />
+				</label>
+				<p *ngIf="passfield.touched && !passfield.valid">La contraseña debe tener al menos cuatro caractéres.</p>
+			</div>
+			<div>
+				<label>
+					Confirmar contraseña:
+					<input #validatepassfield="ngModel" type="password" name="verify" id="verify" [(ngModel)]="data_model.verify" required matchFieldValue="pass" />
+				</label>
+				<p *ngIf="validatepassfield.touched && (!validatepassfield.valid)">Las contraseñas no coinciden.</p>
+			</div>
+			<div>
+				<input type="submit" value="Registrarse" [disabled]="!dataform.valid" />
+			</div>
+		</form>
+	</div>
+
+	<div class="col-md-6">
+		<p>
+			Para comenzar a usar Phoodo sólo tienes que registrarte rellenando el formulario de la izquierda. La única información que necesitarás será tu dirección de correo electrónico y una contraseña.
+		</p>
+		<p>
+			Una vez relleno recibirás un email con instrucciones para completar el registro.
+		</p>
+		<p>
+			Phoodo no usará tu dirección de correo electrónico para enviarte información que no solicites. El desarrollador de Phoodo no tiene ningún interés en tu correo electrónico.
+		</p>
+	</div>
+</div>

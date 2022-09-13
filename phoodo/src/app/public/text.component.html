@@ -1,0 +1,21 @@
+		<h2 *ngIf="is_loaded()">{{get_section_title()}}</h2>
+
+		<div id="text-section" class="row">
+			<div class="col-md-12">
+
+				<ng-container *ngIf="is_loaded()">
+
+				<div class="section color-bg-clear">
+	
+					<h3>{{get_section_subtitle()}}</h3>
+					<div [innerHtml]="get_section_body() | bypassHtmlSanitizer"></div>
+				</div>
+
+				</ng-container>
+				
+				<div *ngIf="!is_loaded()">
+					<p class="loading">Cargando...</p>
+				</div>
+
+			</div>
+		</div>		

@@ -1,0 +1,70 @@
+/*
+<span style="background: #c8ea59">green	#c8ea59</span>
+<span style="background: #eff796">clear	#eff796</span>
+<span style="background: #CCBF80">brown	#CCBF80</span>
+<span style="background: #fcf9ea">white	#fcf9ea</span>
+<span style="background: #ffefa0">flesh	#ffefa0</span>
+<span style="background: #ffcc00">yellow #ffcc00</span>
+*/
+
+.unfinished {color: red !important; background-color: black !important;}
+.devel {position: fixed; bottom: 0px; right: 0px; width: 100px; background: rgba(200,200,200,0.8); transition: all 0.3s ease;}
+.devel.away {right: -80px;}
+.devel input {display: block;}
+
+body {font-family: "Roboto", sans-serif; background-color: #fcf9ea; color: #333333;}
+
+/** Color and background ... */
+.color-fg-main {color: #364408;}
+.color-bg-main {background: url("../assets/bg-pattern-main.svg") #c8ea59;}
+.color-bg-secondary {background: #CCBF80;}
+.color-bg-clear {background: #ddd; }
+.bg-pattern {background-color: #fcf9ea; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d3ca9a' fill-opacity='0.17'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.border-bottom-main {border-bottom: 0.3em solid #c8ea59;}
+.border-top-main {border-top: 0.3em solid #c8ea59;}
+
+/* Button links and inputs... */
+a.btn {text-decoration: none; border: none; color: #fff;}
+.btn:hover {transition: 0.2s all ease;}
+.btn-main {background: #364408; color: #fff; font-weight: bold; padding: 0.3em 2em;}
+.btn-main:hover {background: #5E6939;}
+.btn-blue {background: #4683ea; color: #fff; font-weight: bold; padding: 0.3em 2em;}
+.btn-blue:hover {background: #3868bb;}
+input[type="text"], input[type="password"] {border: 1px solid rgb(209, 213, 218); display: block; width: 100%; padding-top: 0.2em; padding-bottom: 0.2em; color: #24292e; background: #fff;}
+input[type="submit"] {border: none; margin-top: 0.4em;}
+
+/* Header and navigation */
+#site-header h1 {font-size: 1.2em; display: inline;}
+#site-header h1 a {text-decoration: none; color: #333333;}
+#site-header h1 a:hover {text-decoration: none; color: #333333;}
+#site-header img.app-logo {height: 2em; margin-right: 2em;}
+#site-header nav {padding: 1.1em 0em; float: right;}
+#site-header nav a {margin: 1em;}
+
+/* Main */
+#main-content {min-height: 100vh;}
+
+/* Home pieces*/
+div#selling-points {margin-top: 3em;}
+div#selling-points p {text-align: justify;}
+div#selling-points img {width: 3em;}
+div#selling-points div.extra-padding {padding: 0em 2em; margin: 3em 0em 2em 0em;}
+div#selling-points div.dotted-borders {border-right: 1px dotted #444; border-left: 1px dotted #444;}
+
+/* Footer */
+div#footer-info {font-size: 0.95em; padding: 3em 0em; margin-top: 3em;}
+div#footer-info ul {padding: 0px;}
+div#footer-info ul li {list-style: none;}
+div#footer-info .copyright {text-align: center; margin-top: 2em; font-weight: bold;}
+
+#carousel-container {margin: 2em 0em;}
+
+/* Text pieces */
+#text-section {}
+#text-section h2 {}
+#text-section .navigation {background: rgba(239,247,150,0.5); padding: 0.2em 2em; margin-top: 2em;}
+#text-section .navigation ul.text-navigation {margin: none; padding: none;}
+#text-section .navigation ul.text-navigation li {list-style: none; display: inline; margin: none; padding: none;}
+#text-section div.section {padding: 0.2em 2em; margin-top: 2em; border: 1px dashed #777;}
+#text-section div.section p {text-align: justify;}
+#text-section div.section p.right {text-align: right; display: block; padding-right: 2em;}

@@ -1,0 +1,5 @@
+/* Header and navigation */
+#site-header h1 {font-size: 1.2em; padding-top: 0.2em;}
+#site-header h1 a {text-decoration: none; color: #333333;}
+#site-header h1 a:hover {text-decoration: none; color: #333333;}
+#site-header img.app-logo {height: 2em; margin-right: 2em;}

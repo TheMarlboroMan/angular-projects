@@ -1,0 +1,18 @@
+/* Text pieces */
+#text-section {}
+#text-section h2 {text-align: center;}
+/*
+#text-section .navigation {background: rgba(239,247,150,0.5); padding: 0.2em 2em; margin-top: 2em;}
+#text-section .navigation ul.text-navigation {margin: none; padding: none;}
+#text-section .navigation ul.text-navigation li {list-style: none; display: inline; margin: none; padding: none;}
+*/
+#text-section div.section {padding: 0.2em 2em; margin-top: 2em; border: 1px dashed #777;}
+#text-section div.section p {text-align: justify;}
+#text-section div.section p.right {text-align: right; display: block; padding-right: 2em;}
+
+@keyframes loading-animation {
+    from {letter-spacing: 0.1em; opacity:1}
+    to {letter-spacing:1em;opacity:0.8;}
+}
+
+#text-section .loading {text-align: center; padding: 2em; animation: loading-animation 2s infinite alternate-reverse;}

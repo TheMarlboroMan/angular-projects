@@ -1,0 +1,9 @@
+/* Home pieces*/
+#carousel-container {margin: 2em 0em;}
+
+div#selling-points {margin-top: 1em;}
+div#selling-points p {text-align: justify;}
+div#selling-points img {width: 3em;}
+div#selling-points div.extra-padding {padding: 0em 2em; margin: 3em 0em 2em 0em;}
+div#selling-points div.dotted-borders {border-right: 1px dotted #444; border-left: 1px dotted #444;}
+

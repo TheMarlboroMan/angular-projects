@@ -1,0 +1,21 @@
+	<form #dataform="ngForm" (ngSubmit)="submit_form()" >
+		<div>
+			<label>
+				Email:
+				<input type="text" placeholder="tu@email.aqui" name="email" [email]="true" [(ngModel)]="data_model.email" required #emailfield="ngModel" />
+			</label>
+			<p *ngIf="emailfield.touched && !emailfield.valid">El email no es válido.</p>
+
+		</div>
+		<div>
+			<label>
+				Pass:
+				<input type="password" placeholder="****" name="pass" [minlength]="4" [(ngModel)]="data_model.pass" required #passfield="ngModel" />
+			</label>
+			<p *ngIf="passfield.touched && !passfield.valid">La contraseña debe tener al menos cuatro caractéres.</p>
+			
+		</div>
+		<div>
+			<input type="submit" class="btn-main" value="Acceder" [disabled]="!dataform.valid" />
+		</div>
+	</form>

@@ -1,0 +1,88 @@
+<body>
+	<div id="useless-container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="carousel-container"></div>
+			</div>
+		</div>		
+
+		<div id="selling-points" class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row color-bg-clear">
+					<div class="col-md-4 extra-padding ">
+						<img src="assets/question-mark-icon.svg" />
+						<h2>¿Qué es?</h2>
+						<p>
+							Phoodo es la solución a un problema muy concreto y real: organizar la comida y las compras de la semana!.
+						</p>
+						<p>
+							Phoodo integra tu propio <b>calendario</b>, <b>recetario</b> y <b>lista de la compra</b>, siempre disponibles y desde cualquier dispositivo.
+						</p>
+					</div>
+					<div class="col-md-4 extra-padding dotted-borders">
+						<img src="assets/users-icon.svg" />
+						<h2>¿Para quién?</h2>
+						<p>
+							Todo el mundo puede usar Phoodo. Phoodo es completamente <b>gratis</b> y sólo requiere de un registro rápido.
+						</p>
+						<p>
+							No quiero tu dinero, ni tus tarjetas de crédito ni mandarte spam. Francamente, no quiero saber nada de ti.
+						</p>
+					</div>
+					<div class="col-md-4 extra-padding">
+						<img src="assets/login-icon.svg" />
+						<h2>Acceder</h2>
+						<form>
+							<div>
+								<label>
+									Email:<input type="text" />
+								</label>
+							</div>
+							<div>
+								<label>
+									Pass:<input type="password" />
+								</label>
+							</div>
+							<div>
+								<input type="submit" class="btn-main" value="Acceder" />
+							</div>
+						</form>
+						<p>
+							... o <a href="">registrate</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" id="javascript-import">
+
+function pack() {
+
+	let carousel_instance=null;
+	let data=null;
+
+	this.begin=function() {
+		carousel_instance=new djs_simple_carousel();
+		data={
+			delay:4000, largepics: true, width: 800, height: 355, loader_image:"assets/loader.gif",
+			pics:[
+				{src:'assets/carousel-1.png', txt: '¡Cosas raras en platos metálicos!'},
+				{src:'assets/carousel-2.png', txt: '¡Dieta carnívora!'},
+				{src:'assets/carousel-3.png', txt: '¡También para aquellos que comen mucho naranja y verde!'},
+				{src:'assets/carousel-4.png', txt: '¡Especias en Inglés sacadas de filemorgue!'}
+			]
+		};
+		carousel_instance.init(document.getElementById('carousel-container'), data);
+		carousel_instance.start();
+	}
+
+	this.end=function() {
+		carousel_instance.stop();
+		carousel_instance.destroy();
+	}
+}
+
+devel.register_js_pack(new pack());
+	</script>
+</body>
